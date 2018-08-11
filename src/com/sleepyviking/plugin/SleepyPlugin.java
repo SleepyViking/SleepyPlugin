@@ -5,7 +5,7 @@ public class SleepyPlugin extends JavaPlugin {
 
     @Override
     public void onEnable(){
-        getLogger().info("Hello, your Sleepy Viking Plugin has loaded successfully!");
+        getLogger().info("Hello, your Sleepy Viking Plugin has loaded successfully! Now with a Side of Git");
     }
 
 }
