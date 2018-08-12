@@ -3,3 +3,10 @@ author: SleepyViking
 version: 0.1
 main: com.sleepyviking.plugin.SleepyPlugin
 description: Generic Plugin Build - Now With a Side of Git
+commands:
+  doomfist:
+    description: General Doom and Stuff...
+    usage: /doomfist
+  airbubble:
+    description: Please right in if effects are not as desired.
+    usage: /airbubble
