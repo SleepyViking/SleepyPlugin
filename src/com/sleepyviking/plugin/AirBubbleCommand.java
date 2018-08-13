@@ -20,11 +20,11 @@ public class AirBubbleCommand implements CommandExecutor {
 
             Location ploc = player.getLocation();
 
-            player.getWorld().getBlockAt(ploc.getBlockX(), ploc.getBlockY(), ploc.getBlockZ()).setType(Material.AIR);
             player.getWorld().getBlockAt(ploc.getBlockX(), ploc.getBlockY() - 1, ploc.getBlockZ()).setType(Material.AIR);
             player.getWorld().getBlockAt(ploc.getBlockX(), ploc.getBlockY() - 2, ploc.getBlockZ()).setType(Material.AIR);
             player.getWorld().getBlockAt(ploc.getBlockX(), ploc.getBlockY() - 3, ploc.getBlockZ()).setType(Material.AIR);
-            player.sendMessage(ChatColor.DARK_RED + "ERRROR: " + ChatColor.BLACK + ChatColor.ITALIC + " 4 Blocks Removed. Please Board up Error and Try again.");
+            player.getWorld().getBlockAt(ploc.getBlockX(), ploc.getBlockY() - 4, ploc.getBlockZ()).setType(Material.AIR);
+            player.sendMessage(ChatColor.DARK_RED + "ERRROR: " + ChatColor.WHITE + ChatColor.ITALIC + " 4 Blocks Removed. Please Board up Error and Try again.");
 
             /**
             double rot = (player.getLocation().getYaw() - 90) % 360;
